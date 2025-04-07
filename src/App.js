@@ -11,6 +11,31 @@ const App = () => {
     <div>
     <Router>
         <Routes>
+          {/*  route protégée pour les stagiaires */}
+          {/* 
+          <Route 
+            path="/" 
+            element={
+              <PrivateRoute allowedRoles={["stagiaire"]} redirectPath="/login">
+                <DemmandeAbsence />
+              </PrivateRoute>
+            } 
+          />
+          */}
+
+          {/*  structure de route protégée pour le superadmin */}
+          {/* 
+          <Route 
+            path="/admin" 
+            element={
+              <PrivateRoute allowedRoles={["superadmin"]} redirectPath="/login">
+                <AdminDemmande />
+              </PrivateRoute>
+            } 
+          />
+          */}
+
+          {/* Routes actuelles (à remplacer par les routes protégées ) */}
           <Route path="/" element={<DemmandeAbsence />} />
           <Route path="/admin" element={<AdminDemmande />} />
           <Route path="/historique" element={<Historique />} />
