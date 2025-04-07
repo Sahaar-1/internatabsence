@@ -1,0 +1,68 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative; /* Permet de positionner l'icône à l'intérieur */
+}
+
+.search-input {
+  width: 350px;
+  padding: 12px 40px 12px 40px; /* Espace à gauche pour l'icône */
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.1);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Icône de recherche en noir et blanc, placée à l'intérieur */
+.search-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  color: #000; /* Noir */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #555; /* Gris foncé */
+}
+
+/* Style de la barre de navigation pour les absences */
+.absence-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.absence-navbar button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.absence-navbar .justified {
+  color: #28a745; /* Vert */
+}
+
+.absence-navbar .unjustified {
+  color: #dc3545; /* Rouge */
+}
+
+.absence-navbar button:hover {
+  text-decoration: underline;
+}

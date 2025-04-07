@@ -1,0 +1,202 @@
+.admin-container {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  width: 50%;
+
+}
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.filters select, 
+.filters .historique-btn {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.filters .historique-btn {
+  display: flex; /* Pour aligner l'icône et le texte sur la même ligne */
+  align-items: center; /* Aligne l'icône et le texte verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  gap: 8px; /* Espace entre l'icône et le texte */
+  background-color: #9e9e9e;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.filters .historique-btn:hover {
+  background-color: #1976D2;
+}
+
+.filters .historique-btn .icon {
+  font-size: 16px; /* Taille de l'icône */
+}
+
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+.demande-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.demande-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.demande-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.status-pending {
+  background-color: rgba(255, 235, 179, 0.7); /* Couleur plus transparente */
+  color: rgba(255, 152, 0, 0.7); /* Couleur plus transparente */
+}
+
+.status-accepted {
+  background-color: rgba(200, 230, 201, 0.7); /* Couleur plus transparente */
+  color: rgba(76, 175, 80, 0.7); /* Couleur plus transparente */
+}
+
+.status-rejected {
+  background-color:#e66773; /* Couleur plus transparente */
+  color: rgba(228, 144, 138, 0.7); /* Couleur plus transparente */
+}
+
+.demande-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  font-size: 14px;
+  color: #888; /* Informations en gris */
+}
+
+.demande-details p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.demande-details .icon {
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.demande-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Les boutons sont maintenant alignés à droite */
+  margin-top: 20px; /* Déplace les boutons vers le bas de la carte */
+}
+
+.action-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-btn.accept {
+  background-color: #4a5568;
+  color: white;
+}
+
+.action-btn.reject {
+  background-color: #e66773; /* Bouton gris */
+  color: white;
+}
+
+.action-btn .icon {
+  font-size: 16px; /* Taille de l'icône */
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+}
+
+/* Icônes des boutons */
+.action-btn.accept .icon {
+  content: url('https://img.icons8.com/ios-filled/50/ffffff/checkmark.png'); /* Icône de coche */
+}
+
+.action-btn.reject .icon {
+  content: url('https://img.icons8.com/ios-filled/50/ffffff/delete-forever.png'); /* Icône X */
+}
+
+/* Icônes pour le numéro de téléphone et la chambre */
+/* Icônes pour le numéro de téléphone et la chambre */
+.contact-info .phone-icon, 
+.contact-info .room-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.phone-icon {
+  content: url('https://img.icons8.com/ios-filled/50/000000/phone.png'); /* Icône du téléphone */
+}
+
+.room-icon {
+  content: url('https://img.icons8.com/ios-filled/50/000000/room.png'); /* Icône de chambre */
+}
+
+/* Style pour le nom de la demande */
+.demmande-nom h3 {
+  font-size: 20px;  /* Agrandissement de la taille du texte */
+  font-weight: 600; /* Poids du texte pour plus de clarté */
+  color: #333; /* Couleur sombre pour un texte plus visible */
+  margin: 0;
+  text-transform: capitalize; /* Pour que le nom de la demande soit bien mis en forme */
+}
+
+.demmande-nom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+/* CSS pour les jours acceptés dans le calendrier */
+.accepted-day {
+  background-color: #79b87b !important;
+  color: white;
+}
